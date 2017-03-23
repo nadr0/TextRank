@@ -6,6 +6,8 @@ A javascript implementation of **TextRank: Bringing Order into Texts** ([PDF lin
 
 This only has the implementation for the **Sentence Extraction** method described in the paper.
 
+Try it out at http://kevinnadro.me/TextRank/
+
 ### Details
 ---
 Given an article of text in string format it will generate a summary of the article.
