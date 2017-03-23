@@ -8,6 +8,9 @@ This only has the implementation for the **Sentence Extraction** method describe
 
 Try it out at http://kevinnadro.me/TextRank/
 
+##### Has no dependencies 
+You only need the **TextRank.js** file to be include.
+
 ### Details
 ---
 Given an article of text in string format it will generate a summary of the article.
