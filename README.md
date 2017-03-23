@@ -4,7 +4,7 @@
 ----
 A javascript implementation of **TextRank: Bringing Order into Texts** ([PDF link to the paper](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf)) by Rada Mihalcea and Paul Tarau.
 
-This only has the implementation for the **Sentence Extraction** method decsribed in the paper.
+This only has the implementation for the **Sentence Extraction** method described in the paper.
 
 ### Details
 ---
