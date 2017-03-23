@@ -19,9 +19,13 @@ I took all the text from the article above and put it into a string. Then ran th
 var textRank = new TextRank(articleOfText);
 console.log(textRank.summarizedArticle);
 ```
-```
+
+--- 
+Generated summary below from ```textRank.summarizedArticle```
+
 It's difficult to make sense of this as a security measure, particularly at a time when many people question the veracity of government orders, but other explanations are either unsatisfying or damning. This is why, in the past, TSA officials have demanded passengers turn their laptops on: to confirm that they're actually laptops and not laptop cases emptied of their electronics and then filled with explosives. Forcing a would-be bomber to put larger laptops in the plane's hold is a reasonable defense against this threat, because it increases the complexity of the plot. Terrorists are smart enough to put a laptop bomb in checked baggage from the Middle East to Europe and then carry it on from Europe to the US. Even more confusing, The New York Times reported that "officials called the directive an attempt to address gaps in foreign airport security, and said it was not based on any specific or credible threat of an imminent attack.
-```
+
+---
 
 If you want to summarize another article you would have to create a new TextRank object again. (Thinking about changing this later)
 ```javascript
@@ -33,7 +37,7 @@ console.log(textRank_.summarizedArticle);
 ```
 
 ### Settings
-There are some parameters you can set in the TextRank object.
+There are some parameters you can set in the TextRank object. You can provide any combination of none of these settings.
 
 Note: You must provide both **tokens** and **split** not just one or the other if you choose you provide your own.
 ```javascript
