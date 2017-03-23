@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="TextRank.js"></script>
+  <style>
+    #textBox {
+      width: 250px;
+      height: 250px;
+      display: block;
+      margin: 0 auto auto;
+    }
+    #generateButton {
+      display: block;
+      margin: 0 auto auto;
+      margin-top: 50px;
+    }
+    #summaryBox {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+    <textarea id="textBox"></textarea>
+
+    <button id="generateButton" onclick="generateSummary()">Generate Summary</button>
+
+    <div id="summaryBox"></div>
+    <script>
+
+    function generateSummary() {
+      var textBox = document.getElementById("textBox");
+
+      var articleOfText = textBox.value;
+      var textRank = new TextRank(articleOfText);
+
+      var summaryBox = document.getElementById("summaryBox");
+      summaryBox.innerHTML = (textRank.summarizedArticle)? textRank.summarizedArticle: "Must provide text.";
+
+    }
+    </script>
+
+</body>
+</html>
